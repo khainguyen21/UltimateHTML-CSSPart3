@@ -385,3 +385,20 @@ a {
     }
 }
 
+.media {
+    /* If we set flex on the container, we can lay
+    those media object inside the container horizontally */
+    display: flex;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__image {
+    margin-top: 1rem;
+}
