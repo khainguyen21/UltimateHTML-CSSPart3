@@ -235,6 +235,7 @@ a {
     background: var(--color-accent);
     color: #fff
 }
+
 .btn--accent:hover {
     background: #ec3000;
 }
@@ -248,6 +249,11 @@ a {
 .btn--outline:hover {
     background: var(--color-headings);
     color:#fff;
+}
+
+.btn--stretched {
+    padding-left: 7rem;   
+    padding-right: 7rem;   
 }
 
 .btn--block {
@@ -513,3 +519,52 @@ a {
         margin-left: 6rem;
     }
 }
+
+/* Callouts */
+.callout {
+    padding:4rem;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background: var(--color-primmary);
+    color: #fff;
+}
+
+.callout__heading {
+    color: #fff; 
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    /* apply to the grid */
+    /* justify-items: center; */
+    /* apply to the grid */
+    /* align-items: center; */
+    
+    /* apply to the grid item (horizontally)*/
+    justify-self: center;
+    /* apply to the grid item (vertically)*/
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    /* stretched the second grid  */
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
+    
