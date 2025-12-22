@@ -592,7 +592,7 @@ a {
     opacity: 0;
     /* All means apply to all components */
     /* In this case, it is max-height , opacity */
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .collapsible--expanded .collapsible__chevron{
@@ -601,7 +601,7 @@ a {
 
 .collapsible--expanded .collapsible__content{
     max-height: 100vh;
-    /* Face in effect */
+    /* Fade in effect */
     opacity: 1;
 }
 
@@ -644,5 +644,72 @@ a {
     /* we want to center the container */
     /* 0 vertical, auto hortizontal auto equally distributed */
     margin: 0 auto;
+}
+
+/* Navigation Bar */
+.nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    /* Push the last element onto the next line */
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.nav__list {
+    /* Make it wide 100% so it can move onto the next line */
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item {
+    padding: 0.5rem 2rem; 
+    border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+    /* Because the links have their own colors */
+    color: #d2d0db;
+    transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+    /* Because the links have their own colors */
+    color: #fff;
+}
+
+.nav__toggler {
+    opacity: 0.5;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+}
+
+.nav__brand {
+    /* Move the brand logo down a little bit (it's like cheating) */
+    transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav__item {
+        border: 0;
+    }
 }
 
