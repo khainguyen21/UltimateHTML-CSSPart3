@@ -1,0 +1,23 @@
+{
+  "name": "htmlcsscodewithmosh",
+  "version": "1.0.0",
+  "description": "deploy website",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khainguyen21/UltimateHTML-CSSPart3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khainguyen21/UltimateHTML-CSSPart3/issues"
+  },
+  "homepage": "https://github.com/khainguyen21/UltimateHTML-CSSPart3#readme",
+  "keywords": [],
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
